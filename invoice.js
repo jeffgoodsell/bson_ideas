@@ -74,7 +74,7 @@
 		},
 		{
 			edit_date: ISODate("2016-09-25"),
-			creator_id: "John Doe",
+			editor_id: "John Doe",
 			seller_identity: {
 				business_name: "Our Company",
 				address: {
