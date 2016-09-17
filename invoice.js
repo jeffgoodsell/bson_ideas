@@ -2,6 +2,9 @@
 	_id: 10000,
 	customer_id: "company1",
 	account_number: "AEIOU123",
+	status: "open",
+	total: 100.69
+	type: "standard",
 	versions: [
 		{
 			creation_date: ISODate("2016-09-24"),
@@ -140,17 +143,10 @@
 					]
 				},
 				{
-					product: "Widget 3",
+					product: "Non-taxable Services",
 					date_of_purchase: ISODate("2016-09-25"),
 					quantity: 1,
-					price: 13.99,
-					tax: [
-						{
-							city: 1,
-							county: 1.02,
-							state: 6.01
-						}
-					]
+					price: 49.95
 				}
 			]
 		},
