@@ -2,12 +2,12 @@
 	_id: 10000,
 	customer_id: "company1",
 	account_number: "AEIOU123",
-	status: "open",
+	status: "open", // open means someone is currently editing this invoice
 	total: 100.69
 	type: "standard",
 	versions: [
 		{
-			creation_date: ISODate("2016-09-24"),
+			creation_date: ISODate(), // 64 bit integer that equates to a date/time
 			creator_id: "John Doe",
 			seller_identity: {
 				business_name: "Our Company",
@@ -49,7 +49,7 @@
 			items:[
 				{
 					product: "Widget",
-					date_of_purchase: ISODate("2016-09-24"),
+					date_of_purchase: ISODate(),
 					quantity: 3,
 					price: 10.99,
 					tax: [
@@ -62,7 +62,7 @@
 				},
 				{
 					product: "Widget 2",
-					date_of_purchase: ISODate("2016-09-24"),
+					date_of_purchase: ISODate(),
 					quantity: 1,
 					price: 13.99,
 					tax: [
@@ -76,7 +76,7 @@
 			]
 		},
 		{
-			edit_date: ISODate("2016-09-25"),
+			edit_date: ISODate(),
 			editor_id: "John Doe",
 			seller_identity: {
 				business_name: "Our Company",
@@ -118,7 +118,7 @@
 			items:[
 				{
 					product: "Widget",
-					date_of_purchase: ISODate("2016-09-24"),
+					date_of_purchase: ISODate(),
 					quantity: 3,
 					price: 10.99,
 					tax: [
@@ -131,7 +131,7 @@
 				},
 				{
 					product: "Widget 2",
-					date_of_purchase: ISODate("2016-09-24"),
+					date_of_purchase: ISODate(),
 					quantity: 1,
 					price: 13.99,
 					tax: [
@@ -144,7 +144,7 @@
 				},
 				{
 					product: "Non-taxable Services",
-					date_of_purchase: ISODate("2016-09-25"),
+					date_of_purchase: ISODate(),
 					quantity: 1,
 					price: 49.95
 				}
